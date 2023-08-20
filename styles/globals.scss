@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary: #d392fe;
+$secondary: #50db4a;
+$bg: #feffdb;
+
+body {
+  font-size: 16px;
+  background: $bg;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
