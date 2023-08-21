@@ -42,7 +42,7 @@ export default function Home() {
             {chatLog.map((message, index) => (
               message.message && (
                 <div key={index} className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`${message.type === 'user' ? 'bg-[#d392fe]' : 'bg-[#ddd]'} rounded-lg sm:p-4 p-2 text-white max-w-[90%]`}>
+                  <div className={`${message.type === 'user' ? 'bg-[#d392fe]' : 'bg-[#50db4a]'} rounded-lg sm:p-4 p-2 text-white max-w-[90%]`}>
                     {message.message}
                   </div>
                 </div>
