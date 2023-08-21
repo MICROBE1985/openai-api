@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto max-w-[700px] px-3">
-      <div className="flex flex-col justify-between min-h-screen h-[100%]">
+      <div className="svh flex flex-col justify-between h-[100%]">
         <div>
           <h1 className="text-[#d392fe] text-center font-bold sm:text-6xl text-4xl py-10">OpenAI API × Next.js</h1>
 

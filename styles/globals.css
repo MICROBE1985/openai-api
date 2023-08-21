@@ -10,4 +10,8 @@ body {
     font-size: 14px;
   }
 }
+
+.svh {
+  height: 100svh;
+}
 /*# sourceMappingURL=globals.css.map */
