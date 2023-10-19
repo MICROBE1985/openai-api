@@ -18,17 +18,19 @@ export default function Home() {
     const url = '/api/chat';
 
     const data = {
-      model: "gpt-3.5-turbo-0301",
+      // model: "gpt-3.5-turbo-0301",
+      model: "gpt-4-0613",
+      // messages: [{ "role": "user", "content": message }]
       messages: [{ "role": "user", "content": message }]
     };
     setIsLoading(true);
     axios.post(url, data).then((response) => {
-      console.log(response);
+      // console.log(response);
       setChatLog((prevChatLog) => [...prevChatLog, { type: 'bot', message: response.data.choices[0].message.content }])
       setIsLoading(false);
     }).catch((error) => {
+      // console.log(error);
       setIsLoading(false);
-      console.log(error);
     })
   }
 
